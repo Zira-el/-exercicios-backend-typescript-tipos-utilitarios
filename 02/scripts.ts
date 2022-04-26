@@ -33,16 +33,6 @@ type NovoCarrinho = Omit<Carrinho, 'tipoTransacao'> & {
     tipoTransacao: Lowercase<'credito' | 'Debito'>
 }
 
-// type NovoCarrinho = {
-//     item: Item,
-//     qtd: number,
-//     desconto: number,
-//     frete: number,
-//     tipoTransacao: Lowercase<'credito' | 'Debito'>,
-//     cartao: Cartao
-//     endereco: Endereco
-// }
-
 const venda: NovoCarrinho = {
     item: {
         nome: 'string',
